@@ -1,0 +1,13 @@
+.section-strategic-imperative {
+  .content-container {
+    @media (min-width: 1200px) {
+      padding-left: 38px;
+    }
+  }
+
+  .image-container {
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+}

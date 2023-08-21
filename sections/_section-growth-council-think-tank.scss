@@ -1,0 +1,51 @@
+.section-growth-council-think-tank {
+  background-size: cover;
+  padding-bottom: 18.1rem;
+  @media (max-width: 1440px) {
+    padding-bottom: 13.1rem;
+  }
+  .header-with-button {
+    margin-bottom: 8.9rem;
+    @media (max-width: 1440px) {
+      margin-bottom: 2.3rem;
+    }
+  }
+  .think-tank-series-slider {
+    @media (min-width: 768px) {
+      padding-left: 11.4rem;
+    }
+    .slick-list {
+      padding: 0 27% 0 0 !important;
+      @media (max-width: 768px) {
+        padding: 0 !important;
+      }
+    }
+    .slick-slider {
+      margin: 0 2.5rem;
+    }
+    .slick-slide {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      @media (max-width: 991px) {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+    .content-container {
+      position: relative;
+      border-radius: 2rem;
+      overflow: hidden;
+      .image-container {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+      .text-box {
+        position: absolute;
+        bottom: 4.5rem;
+        left: 4.2rem;
+      }
+    }
+  }
+}

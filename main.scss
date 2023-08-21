@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/helper",
+  "abstracts/mixins", "abstracts/utilities", "abstracts/animations.scss";
+
+// 2. Vendors
+@import "vendors/normalize", "vendors/bootstrap", "vendors/animate",
+  "vendors/aos", "vendors/choices", "vendors/jsCalendar", "vendors/slick-theme",
+  "vendors/slick";
+
+// 3. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer", "layout/grid", "layout/nav";
+
+// 5. Components
+@import "components/button", "components/news_slider", "components/chart",
+  "components/header", "components/common", "components/resuables",
+  "components/jsCalendar", "components/floation-button", "components/slick";
+
+// Section specefic styles
+@import "sections/section-hero", "sections/section-road",
+  "sections/section-growth", "sections/section-best-practices",
+  "sections/section-growth-community", "sections/section-new-members",
+  "sections/sections-think-tank-series",
+  "sections/section-growth-content-articles", "sections/section-coaching",
+  "sections/section-growth-coaching-program", "sections/section-pipeline",
+  "sections/section-coaching-clinic", "sections/section-service-manager",
+  "sections/section-cta", "sections/section-growth-innovation",
+  "sections/section-growth-partners",
+  "sections/section-growth-council-think-tank",
+  "sections/section-growth-calendar", "sections/section-strategic-imperative";
+// 6. Page-specific styles
+@import "pages/home", "pages/review", "pages/prospect", "pages/login",
+  "pages/notification", "pages/transformation", "pages/gou";
+
+// 7. Themes
+@import "themes/default";
