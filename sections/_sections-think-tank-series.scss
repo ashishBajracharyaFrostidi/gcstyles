@@ -47,18 +47,46 @@
       align-items: end;
       border-radius: 0.8rem;
       margin-bottom: 4.6rem;
+
       // border-bottom: 1.3rem solid $color-gc-orange;
       position: relative;
       @media (max-width: 768px) {
         margin-bottom: 26px;
+      }
+      .badge-container {
+        display: flex;
+        align-items: center;
+        background-color: $gc-badge-bg;
+        width: fit-content;
+        padding: 12px 12px;
+        border-radius: 5px;
+        border: 1px solid $white;
+        // position: absolute;
+        top: 16px;
+        right: 62px;
+        margin-bottom: 3rem;
+        .icon-container {
+          width: 33px;
+          margin-right: 15px;
+        }
+        p {
+          color: $white;
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0;
+        }
       }
 
       .content-container {
         width: 72.6rem;
         max-width: 100%;
         position: relative;
+
         .text-container {
-          margin-bottom: 4.6rem;
+          margin-bottom: 3.5rem;
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 13px 6px;
+          border-left: 4px solid $color-gc-blue;
           h3 {
             font-size: 4.8rem;
             line-height: 1.23;
@@ -71,15 +99,46 @@
     }
 
     .think-tank-sub {
-      padding: 36px 14px 23px;
+      padding: 116px 14px 23px;
       border-bottom: 10px solid $color-gc-orange;
       position: relative;
       @media (max-width: 768px) {
         margin-bottom: 14px;
       }
 
+      .badge-container {
+        display: flex;
+        align-items: center;
+        background-color: $gc-badge-bg;
+        width: fit-content;
+        padding: 6px 9px;
+        border-radius: 3px;
+        border: 1px solid $white;
+        // position: absolute;
+        margin-bottom: 3rem;
+        top: 33px;
+        right: 35px;
+        margin-bottom: 15px;
+        .icon-container {
+          width: 19px;
+          margin-right: 11px;
+        }
+        p {
+          color: $white;
+          font-size: 12px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+
       .content-container {
         position: relative;
+        .text-container {
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 5px;
+          border-left: 2px solid $color-gc-blue;
+          margin-bottom: 10px;
+        }
       }
       .pill-industry {
         position: sticky;
@@ -281,7 +340,7 @@
   position: absolute;
   top: 18px;
   right: 14px;
-  left: 14px;
+  // left: 14px;
   color: $color-gc-blue-shade-1;
   padding: 6px 12px;
 }

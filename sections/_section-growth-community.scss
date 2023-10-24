@@ -78,3 +78,29 @@
     height: inherit !important;
   }
 }
+
+#section3 {
+  // padding: 64px 0;
+  position: relative;
+  .solid-overlay {
+    background-color: rgba($color-gc-blue, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .content-container {
+    position: relative;
+    width: 833px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .dashed {
+      &:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

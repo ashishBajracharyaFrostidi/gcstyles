@@ -4,10 +4,6 @@
     background-color: transparent;
     tr {
       display: block;
-
-      td {
-        // width: calc((100% - 31px) / 7);
-      }
     }
     .jsCalendar-title-row {
       display: flex;
@@ -68,9 +64,6 @@
       tr {
         display: flex;
         justify-content: space-between;
-        td {
-          // min-width: calc(100% / 7);
-        }
       }
     }
   }
@@ -235,4 +228,8 @@
 .jsCalendar-title-left,
 .jsCalendar-title-right {
   display: none;
+}
+.jsCalendar tbody td.jsCalendar-next,
+.jsCalendar tbody td.jsCalendar-previous {
+  color: transparent !important;
 }

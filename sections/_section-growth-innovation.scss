@@ -2,35 +2,41 @@
   .content-container-outer {
     // margin-top: -239px;
     position: relative;
-    height: 563px;
-    @media (max-width: 768px) {
+
+    gap: 18px;
+    // height: 563px;
+    @media (max-width: 1200px) {
       height: auto;
+      flex-wrap: wrap;
     }
     .left {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 69.94%;
-      height: 100%;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // width: 69.94%;
+      // height: 100%;
+      width: 60%;
+
       transition: all 0.3s ease;
       // &:hover {
       //   z-index: 99;
       //   // transform: scale(1.05);
       // }
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         width: 100%;
         position: inherit;
       }
       .image-container {
         border-radius: 8px;
-        height: 100%;
+        aspect-ratio: 16/9;
+        // height: 100%;
         overflow: hidden;
         @media (max-width: 768px) {
           min-height: auto;
           aspect-ratio: 16/9;
         }
         img {
-          width: 141px;
+          width: 80px;
           @media (max-width: 768px) {
             width: 60px;
             // top: 34%;
@@ -39,20 +45,23 @@
       }
     }
     .right {
-      position: absolute;
-      width: 51.94%;
-      left: 50%;
-      top: 50%;
-      transform: translate(0%, -50%);
+      // position: absolute;
+      // width: 51.94%;
+      // left: 50%;
+      // top: 50%;
+      // transform: translate(0%, -50%);
+      height: 80%;
+      margin: auto 0;
+      width: 40%;
+      flex-shrink: 0;
       z-index: 10;
-
       background-color: $color-gc-blue;
-      padding: 54px 70px;
+      padding: 34px 32px;
       border-radius: 8px;
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         width: 100%;
-        top: 100%;
-        left: 0;
+        // top: 100%;
+        // left: 0;
         position: inherit;
         transform: translate(0, 0);
       }
@@ -64,6 +73,7 @@
       .content-container-inner {
         .header-box-secondary {
           h2 {
+            font-size: 28px;
             font-weight: 400;
             line-height: 1.4;
             color: white;
@@ -74,6 +84,7 @@
           h1 {
             color: white;
             line-height: 1.2;
+            font-size: 38px;
           }
         }
       }
